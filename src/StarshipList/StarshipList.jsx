@@ -21,15 +21,15 @@ const StarshipList = () => {
         ?
           <div className="starship-list">
             {starshipList.map((ship, idx) => 
-              <div key={idx} className="starship-card">
-                <Link to='/starship' state={{ship}}>
+              <Link key={idx} to='/starship' state={{ship}}>
+                <div className="starship-card">
                   {ship.name}
-                </Link>
-              </div>
+                </div>
+              </Link>
             )}
           </div>
         :
-          <div className="starship-list">
+          <div className="starship-gif">
             <img id='gif' src="/babyyoda.gif" alt="lightspeed gif"/>
           </div>
       }
