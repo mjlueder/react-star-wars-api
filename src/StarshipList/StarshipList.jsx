@@ -30,7 +30,7 @@ const StarshipList = () => {
           </div>
         :
           <div className="starship-gif">
-            <img id='gif' src="/babyyoda.gif" alt="lightspeed gif"/>
+            <img id='gif' src="/babyyoda.gif" alt="baby yoda gif"/>
           </div>
       }
     </>
