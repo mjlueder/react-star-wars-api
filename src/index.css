@@ -31,6 +31,14 @@ h2 {
   margin: 8px 0;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin-top: 24px;
+}
+
 header > h1 {
   background-color: white;
   color: #282c34;
@@ -57,7 +65,6 @@ button {
   padding: 24px 16px 16px 16px;
   margin: 16px 0;
   font-size: 18px;
-
 }
 
 .starship-list{
@@ -74,7 +81,7 @@ button {
   align-items: center;
   background-color: black;
   width: 100vw;
-  height: 95vh;
+  height: 90vh;
 }
 
 .starship-card {
@@ -112,9 +119,17 @@ button {
   margin: 40px;
 }
 
+#mf-icon {
+  height: 60px;
+}
+
+#r2-icon {
+  height: 70px;
+}
+
 #gif {
   width: 650px;
-}
+} 
 
 #lightspeed {
   border: outset;
