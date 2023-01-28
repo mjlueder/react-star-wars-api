@@ -107,6 +107,11 @@ button {
   width: 420px;
 }
 
+.pilots {
+  text-align: center;
+  margin: 40px;
+}
+
 #gif {
   width: 650px;
 }

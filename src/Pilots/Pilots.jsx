@@ -1,0 +1,38 @@
+import { useEffect, useState } from "react";
+
+import { getPilots } from "../services/sw-api";
+
+const Pilots = (props) => {
+  console.log('PROPS.PILOT ', props.pilots);
+
+  const [pilotList, setPilotList] = useState([])
+
+  useEffect (() => {
+    const fetchPilots = async () => {
+      const pilotData = await getPilots(props.pilots)
+      setPilotList(pilotData)
+    }
+    fetchPilots()
+  }, [])
+  
+  console.log('PILOT LIST ', pilotList);
+
+  const nameList = pilotList.map(pilot => pilot.name)
+
+  console.log(nameList);
+
+  return (
+    <>
+      {pilotList.length
+        ? <div className="pilots">
+            <h2>Pilots:</h2>
+            {nameList.map(name =>
+            <h3>{name}</h3>)}
+          </div>
+        : <></>
+      }
+    </>
+  )
+}
+
+export default Pilots
