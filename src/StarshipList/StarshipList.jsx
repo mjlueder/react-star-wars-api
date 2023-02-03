@@ -21,7 +21,10 @@ const StarshipList = () => {
         ?
           <div className="starship-list">
             {starshipList.map((ship, idx) => 
-              <Link key={idx} to='/starship' state={{ship}}>
+              <Link 
+                key={idx} 
+                to='/starship' 
+                state={{ship}}>
                 <div className="starship-card">
                   {ship.name}
                 </div>

@@ -9,7 +9,8 @@ const Starship = (props) => {
 
   return (
     <>
-      <Pilots pilots={location.state.ship.pilots}/>
+      if({location.state.ship.pilot.lenght})
+        <Pilots pilots={location.state.ship.pilots}/>
       <div className="starship-info">
         <h1>Name: {location.state.ship.name}</h1>
         <h2>Model: {location.state.ship.model}</h2>

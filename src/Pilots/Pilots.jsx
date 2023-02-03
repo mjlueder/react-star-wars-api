@@ -29,7 +29,7 @@ const Pilots = (props) => {
             {nameList.map(name =>
             <h3>{name}</h3>)}
           </div>
-        : <></>
+        : <h3>Loading Pilots...</h3>
       }
     </>
   )

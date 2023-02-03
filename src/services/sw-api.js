@@ -10,3 +10,13 @@ export async function getPilots(urls) {
   const pilotObjects = await Promise.all(promises)
   return pilotObjects
 }
+
+export async function getPlanets() {
+  const res = await fetch(`${baseUrl}/planets`)
+  return res.json()
+}
+
+export async function getPlanet(planetId) {
+  const res = await fetch(`${baseUrl}/planets/${planetId}`)
+  return res.json()
+}
