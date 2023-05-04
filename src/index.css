@@ -151,12 +151,25 @@ button {
 
 @media only screen and (max-width: 750px) {
   .starship-list {
-    margin-top: 150px;
+    margin-top: 180px;
   }
 }
 
 @media only screen and (max-width: 400px) {
   main {
-    margin-top: 400px;
+    margin-top: 380px;
+  }
+  header p {
+    font-size: 14px;
+  }
+  #mf-icon {
+    height: 55px;
+  }
+  
+  #r2-icon {
+    height: 60px;
+  }
+  header h1 {
+    font-size: 42px;
   }
 }
