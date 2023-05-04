@@ -148,3 +148,9 @@ button {
   border: outset;
   width: 120vh;
 }
+
+@media only screen and (max-width: 750px) {
+  .starship-list {
+    margin-top: 150px;
+  }
+}
