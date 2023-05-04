@@ -9,8 +9,11 @@ const Starship = (props) => {
 
   return (
     <>
-      if({location.state.ship.pilot.lenght})
+      {/* {location.state.ship.pilot?.length &&
+        <>
+        <h2>Pilots:</h2>
         <Pilots pilots={location.state.ship.pilots}/>
+        </>} */}
       <div className="starship-info">
         <h1>Name: {location.state.ship.name}</h1>
         <h2>Model: {location.state.ship.model}</h2>

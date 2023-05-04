@@ -8,8 +8,8 @@ const PlanetList = () => {
 
   useEffect (() => {
     const fetchPlanets = async () => {
-      const planetData = await getPlanets()
-      setPlanetList(planetData.results)
+      const planetsData = await getPlanets()
+      setPlanetList(planetsData.results)
     }
     fetchPlanets()
   }, [])
@@ -18,7 +18,7 @@ const PlanetList = () => {
 
   return (
     <>
-      <h1>Planets!</h1>
+      {/* <h1>Planets!</h1> */}
       {planetList.length
         ?
           <div className="starship-list">

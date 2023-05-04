@@ -1,5 +1,5 @@
 import millenium from '../assets/millenium.png'
-import r2d2 from '../assets/r2d2.png'
+import r2d2 from '../assets/r2d2-small.png'
 import { NavLink } from 'react-router-dom'
 
 const NavBar = () => {

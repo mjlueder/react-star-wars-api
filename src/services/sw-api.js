@@ -6,10 +6,16 @@ export async function getStarships() {
 }
 
 export async function getPilots(urls) {
-  const promises = urls.map(url => fetch(url).then(res => res.json()))
+  const promises = urls.map(url => 
+    fetch(url).then(res => res.json())
+  )
   const pilotObjects = await Promise.all(promises)
   return pilotObjects
 }
+
+// const async function getPilots(urls) {
+//   const 
+// }
 
 export async function getPlanets() {
   const res = await fetch(`${baseUrl}/planets`)

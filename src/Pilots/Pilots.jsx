@@ -25,7 +25,6 @@ const Pilots = (props) => {
     <>
       {pilotList.length
         ? <div className="pilots">
-            <h2>Pilots:</h2>
             {nameList.map(name =>
             <h3>{name}</h3>)}
           </div>
