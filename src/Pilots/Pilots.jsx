@@ -25,7 +25,8 @@ const Pilots = (props) => {
     <>
       {pilotList.length
         ? <div className="pilots">
-            {nameList.map(name =>
+            {nameList.map((name, idx) =>
+            idx < 4 &&
             <h3>{name}</h3>)}
           </div>
         : <h3>Loading Pilots...</h3>
