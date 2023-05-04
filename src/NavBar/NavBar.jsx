@@ -1,4 +1,4 @@
-import millenium from '../assets/millenium.png'
+import millenium from '../assets/millenium-small.png'
 import r2d2 from '../assets/r2d2-small.png'
 import { NavLink } from 'react-router-dom'
 
@@ -7,13 +7,13 @@ const NavBar = () => {
     <>
       <header>
         <NavLink to='/'>
-          <img src={r2d2} alt="r2d2" id='r2-icon'/>
           <p>starships</p>
+          <img src={millenium} alt="millenium falcon" id='mf-icon'/>
         </NavLink>
         <h1>star wars</h1>
         <NavLink to='/planets'>
+          <img src={r2d2} alt="r2d2" id='r2-icon'/>
           <p>planets</p>
-          <img src={millenium} alt="millenium falcon" id='mf-icon'/>
         </NavLink>
       </header>
     </>
